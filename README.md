@@ -14,12 +14,16 @@ In an attempt to keep "computer speak" at a minimum, I've given the UI the human
 ### Cheatsheet
 For those in a hurry, here's a quick cheatsheet for the CIxD Syntax
 
- Interaction                              | Marker | Syntax Example
- ---------------------------------------- | ------ | -----------------------
- Action (clicking buttons etc.)           | `[]`   | `[Delete this message]`
- Prompts (alert boxes)                    | `()`   | `(Are you sure?)`
- Notifications (before and after actions) | `/**/` | `/* Message deleted. */`
- Referencing Objects and Properties       | `{{}}` | `{{conversation.title}}`
+ Interaction                              | Marker  | Syntax Example
+ ---------------------------------------- | ------- | ------------------------
+ Action (clicking buttons etc.)           | `[]`    | `[Delete this message]`
+ Prompts (alert boxes)                    | `()`    | `(Are you sure?)`
+ Notifications (before and after actions) | `/**/`  | `/* Message deleted. */`
+ Referencing Objects and Properties       | `{{}}`  | `{{conversation.title}}`
+ Input fields and Input Titles            | `__`    | `_Enter your key name_`
+ List of Actions (like a menu)            | `[],[]` | `[Applications],[Settings]`
+
+
 
 
 
