@@ -14,16 +14,14 @@ In an attempt to keep "computer speak" at a minimum, I've given the UI the human
 ### Cheatsheet
 For those in a hurry, here's a quick cheatsheet for the CIxD Syntax
 
- Interaction                              | Marker  | Syntax Example
- ---------------------------------------- | ------- | ------------------------
- Action (clicking buttons etc.)           | `[]`    | `[Delete this message]`
- Prompts (alert boxes)                    | `()`    | `(Are you sure?)`
- Notifications (before and after actions) | `/**/`  | `/* Message deleted. */`
- Referencing Objects and Properties       | `{{}}`  | `{{conversation.title}}`
- Input fields and Input Titles            | `__`    | `_Enter your key name_`
- List of Actions (like a menu)            | `[],[]` | `[Applications],[Settings]`
-
-
+ Interaction                              | Marker      | Syntax Example
+ ---------------------------------------- | ----------- | ------------------------
+ Action (clicking buttons etc.)           | `[]`        | `[Delete this message]`
+ Prompts (alert boxes)                    | `()`        | `(Are you sure?)`
+ Notifications (before and after actions) | `/**/`      | `/* Message deleted. */`
+ Referencing Objects and Properties       | `{{}}`      | `{{conversation.title}}`
+ Input fields and Input Titles            | `__`        | `_Enter your key name_`
+ List of Actions (like a menu)            | `[],[] and` | `[Applications],[Settings] and [Jazz]`
 
 
 
@@ -103,3 +101,9 @@ It is now possible for me as a developer (or designer) to read through the "Dele
 
 
 
+### List of Actions (like menus)
+
+```
+You: So, what can I do here?
+Yui: Lots! Umm, in the top menu you can go to either [Applications],[Settings] and [Log Out] and in the bottom menu you can go to [About],[Privacy Policy] and [Terms of Use].
+```
