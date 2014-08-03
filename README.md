@@ -100,6 +100,11 @@ It is now possible for me as a developer (or designer) to read through the "Dele
 4. If they select "No, don't!", it should not delete the conversation and just go back to the previous screen.
 
 
+### Input fields and Input Titles
+```
+You: Alright, I need to enter what kind of details?
+Yui: First off, I need to you to _Enter your name here_, your _Preferred Username here_ and finally your _Email Address here_.
+```
 
 ### List of Actions (like menus)
 
