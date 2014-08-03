@@ -11,6 +11,22 @@ When trying to translate a conversational design from words on a piece of paper 
 In an attempt to keep "computer speak" at a minimum, I've given the UI the human name `Yui`. I have no idea if this is beneficial, but it feels much better than `Computer:` or `UI:`.
 
 
+### Cheatsheet
+For those in a hurry, here's a quick cheatsheet for the CIxD Syntax
+
+| Interaction                     | Marker | Syntax                  |
+| ------------------------------- | ------ | ----------------------- |
+| Action (clicking buttons etc.)  | `[]`   | `[Delete this message]` |
+
+
+
+
+
+
+
+
+
+
 ### Actions
 Actions could refer to any kind of active interaction that the user might take throughout the system, such as creating, deleting, editing something. This could be visualized by bracketing the text that reflects the action, which could look like this:
 
@@ -40,7 +56,7 @@ This could be written as below:
     Yui: Alrighty, /*the conversation has been deleted*/
 ```
 
-### Objects
+### Objects & Object References
 In almost every modern web application the interface is built up by fetching objects from a database and expose either all, some or one part of them to the user for further manipulation. How may we add objects to a conversation? One way is to be inspired by the many modern web frameworks that use double curly brackets to referencing an object (or a part of one).
 
 This could be written as below:
