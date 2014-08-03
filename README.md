@@ -14,7 +14,7 @@ In an attempt to keep "computer speak" at a minimum, I've given the UI the human
 ### Cheatsheet
 For those in a hurry, here's a quick cheatsheet for the CIxD Syntax
 
-| Interaction                     | Marker | Syntax                  |
+| Interaction                     | Marker | Syntax Example          |
 | ------------------------------- | ------ | ----------------------- |
 | Action (clicking buttons etc.)  | `[]`   | `[Delete this message]` |
 
