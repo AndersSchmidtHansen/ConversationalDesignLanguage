@@ -22,7 +22,7 @@ For those in a hurry, here's a quick cheatsheet for the CIxD Syntax
  Referencing Objects and Properties       | `{{}}`      | `{{conversation.title}}`
  Input fields and Input Titles            | `__`        | `_Enter your key name_`
  List of Actions (like a menu)            | `[],[] and` | `[Applications],[Settings] and [Jazz]`
- Images and their Descriptions            | `||`        | `|A cool picture of a cat|`
+ Images and their Descriptions            | ``||``      | ``|A cool picture of a cat|``
  Text and Body Copy                       | `----`      | `--This is some text--`
  Headlines                                | `##`        | `#Complete your sign up#`
  Default values                           | `/`         | `Your name / {{user.name}}`
