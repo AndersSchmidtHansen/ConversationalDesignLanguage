@@ -11,24 +11,7 @@ When trying to translate a conversational design from words on a piece of paper 
 In an attempt to keep "computer speak" at a minimum, I've given the UI the human name `Yui`. I have no idea if this is beneficial, but it feels much better than `Computer:` or `UI:`.
 
 
-### Cheatsheet
-For those in a hurry, here's a quick cheatsheet for the CIxD Syntax
-
- Interactions and Content                 | Marker      | Syntax Example
- ---------------------------------------- | ----------- | ------------------------
- Action (clicking buttons etc.)           | `[]`        | `[Delete this message]`
- Prompts (alert boxes)                    | `()`        | `(Are you sure?)`
- Notifications (before and after actions) | `/**/`      | `/* Message deleted. */`
- Referencing Objects and Properties       | `{{}}`      | `{{conversation.title}}`
- Input fields and Input Titles            | `__`        | `_Enter your key name_`
- List of Actions (like a menu)            | `[],[] and` | `[Applications],[Settings] and [Jazz]`
- Images and their Descriptions            | `;;`        | `;A cool picture of a cat;`
- Text and Body Copy                       | `----`      | `--This is some text--`
- Headlines                                | `##`        | `#Complete your sign up#`
- Default values                           | `/`         | `Your name / {{user.name}}`
- Tooltips                                 | `^^`        | `^Should contain at least 6 characters^`
-
-
+## Examples of Use
 
 ### Actions
 Actions could refer to any kind of active interaction that the user might take throughout the system, such as creating, deleting, editing something. This could be visualized by bracketing the text that reflects the action, which could look like this:
@@ -104,8 +87,61 @@ Yui: First off, I need to you to _Enter your name here_, your _Preferred Usernam
 ```
 
 ### List of Actions (like menus)
-
 ```
 You: So, what can I do here?
 Yui: Lots! Umm, in the top menu you can go to either [Applications],[Settings] and [Log Out] and in the bottom menu you can go to [About],[Privacy Policy] and [Terms of Use].
 ```
+
+### Images and their Descriptions
+```
+You: I'd love to [see an example] of the product, is that possible?
+Yui: Of course! ;An example of the product looks like this;
+```
+Here I would know that the user will be clicking a button with the text "See an example", which in return should display an image with the `title` and `alt` tag containing the text "An example of the product looks like this". A coded result could look like `<img src="/example.png" title="An example of the product looks like this" alt="An example of the product looks like this" />`
+
+### Headlines and Text Paragraphs
+Almost every interface contains some mix of Headlines and Text Paragraphs, whether for marketing purposes, descriptive purposes and so on. To write this in CIxD syntax, you wrap headlines in two `#` characters and paragraphs in two `--` characters. Like so:
+
+```
+Yui: #Thanks for signing up as a customer!#
+Yui: --As a welcome gift, we've added 20 free credits to your account. Spend it wisely!--
+```
+Here I would know that the page should contain a headline, e.g. a `<h1>` tag with the text `Thanks for signing up as a customer!`. The same being true for the following text paragraph, which would probably be displayed with a `<p>` or `<span>` tag.
+
+### Default Values
+What do we do if we need to display some default text like "Your Company Name" when the user has not yet told us what it is? In CIxD syntax we could solve it with the `/` character, stating an "or". Like this:
+```
+Yui: #{{company.name}} / Your Company Name#
+```
+In this more complex example, I would know that here is a Headline that contains the text "Your Company Name" IF no value for `{{company.name}}` has been given. For PHP developers who use the Laravel framework this could be coded like this:
+`{{{ $company_name or 'Your Company Name' }}}`
+
+### Tooltips & Titles
+Most form fields display some kind of tooltips or titles that aid the user when entering their data. How may we write this in CIxD? By using the caret character `^^` we can indicate something "above" another thing, like an input field. Like so:
+```
+You: So, what information do you need from me?
+Yui: Not much, just your _Password_, which ^Must contain at least 6 characters^
+```
+This could translate directly into the following code:
+```
+<label for="input_password">Password</label>
+<input type="password" id="input_password" name="input_password" title="Must contain at least 6 characters" />
+```
+
+
+## Cheatsheet
+For those in a hurry, here's a quick cheatsheet for the CIxD Syntax
+
+ Interactions and Content                 | Marker      | Syntax Example
+ ---------------------------------------- | ----------- | ------------------------
+ Action (clicking buttons etc.)           | `[]`        | `[Delete this message]`
+ Prompts (alert boxes)                    | `()`        | `(Are you sure?)`
+ Notifications (before and after actions) | `/**/`      | `/* Message deleted. */`
+ Referencing Objects and Properties       | `{{}}`      | `{{conversation.title}}`
+ Input fields and Input Titles            | `__`        | `_Enter your key name_`
+ List of Actions (like a menu)            | `[],[] and` | `[Applications],[Settings] and [Jazz]`
+ Images and their Descriptions            | `;;`        | `;A cool picture of a cat;`
+ Text Paragraphs                          | `----`      | `--This is some text--`
+ Headlines                                | `##`        | `#Complete your sign up#`
+ Default values                           | `/`         | `{{user.name}} / Your name`
+ Tooltips                                 | `^^`        | `^Should contain at least 6 characters^`
