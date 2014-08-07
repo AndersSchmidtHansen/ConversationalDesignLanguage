@@ -26,6 +26,7 @@ For those in a hurry, here's a quick cheatsheet for the CIxD Syntax
  Text and Body Copy                       | `----`      | `--This is some text--`
  Headlines                                | `##`        | `#Complete your sign up#`
  Default values                           | `/`         | `Your name / {{user.name}}`
+ Tooltips                                 | `^^`        | `^Should contain 6 characters^`
 
 
 
