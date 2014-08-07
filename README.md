@@ -95,9 +95,10 @@ Yui: Lots! Umm, in the top menu you can go to either [Applications],[Settings] a
 ### Images and their Descriptions
 ```
 You: I'd love to [see an example] of the product, is that possible?
-Yui: Of course! ;An example of the product looks like this;
+Yui: Of course! Here's ;An example of the product;
 ```
-Here I would know that the user will be clicking a button with the text "See an example", which in return should display an image with the `title` and `alt` tag containing the text "An example of the product looks like this". A coded result could look like `<img src="/example.png" title="An example of the product looks like this" alt="An example of the product looks like this" />`
+Here I would know that the user will be clicking a button with the text "See an example", which in return should display an image with the `title` and `alt` tag containing the text "An example of the product". A coded result could look like
+`<img src="/example.png" title="An example of the product" alt="An example of the product" />`
 
 ### Headlines and Text Paragraphs
 Almost every interface contains some mix of Headlines and Text Paragraphs, whether for marketing purposes, descriptive purposes and so on. To write this in CIxD syntax, you wrap headlines in two `#` characters and paragraphs in two `--` characters. Like so:
