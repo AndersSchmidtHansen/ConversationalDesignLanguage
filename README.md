@@ -1,7 +1,12 @@
-CIxD Syntax
+Conversational Design Syntax
 ====================================
 
-An experimental repository that acts as an online documentation for syntax that could be used in Conversational Interaction Design.
+An experimental repository that acts as an online documentation for a syntax or that could be used in Conversational Design.
+
+What is Conversational Design?
+----------------------------------------------------------
+Conversational Design is a "working title" I use for the method described by [Luca Leone in this great article](http://www.smashingmagazine.com/2014/07/21/how-do-you-design-interaction/) which is featured at Smashing Magazine. It is an approach to designing interfaces and interaction by writing out an everyday conversation, as if you were talking to a friend or employee in a store.
+
 
 
 Syntax
