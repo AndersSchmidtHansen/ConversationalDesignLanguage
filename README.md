@@ -164,6 +164,8 @@ For those in a hurry, here's a quick cheatsheet for the CD Syntax
  Headlines                                | `##`        | `#Complete your sign up#`
  Default values                           | `/`         | `{{user.name}} / Your name`
  Tooltips                                 | `^^`        | `^Should contain at least 6 characters^`
+ Lists                                    | `>1. 2. 3.<`| `>1. This. 2. That 3. Those<`
+ Motions                                  | `~~`        | `~ The sidebar slides in, fast ~`
 
 
 
