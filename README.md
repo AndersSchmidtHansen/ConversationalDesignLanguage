@@ -164,3 +164,11 @@ For those in a hurry, here's a quick cheatsheet for the CD Syntax
  Headlines                                | `##`        | `#Complete your sign up#`
  Default values                           | `/`         | `{{user.name}} / Your name`
  Tooltips                                 | `^^`        | `^Should contain at least 6 characters^`
+
+
+
+## Complementary Design Methods
+To make the most out of CD and the CD Syntax, I'd definitely recommend trying the scripts you produce in combination with classic design methods and evaluate how this affects the iteration of your scripts. Methods I could definitely see as very applicable are:
+
+- **Method Acting**
+  Taking one or more of your scripts, find a friend or a potential user and act out the script with them. It might become painfully clear that your design or interaction flow is asking too much of the user, seems rude or confusing. Many e-commerce checkout processes could benefit from this approach. Just think of how strange it would be if shopping in the offline world would be if it mirrored the flow many webshops force customers through.
