@@ -119,7 +119,7 @@ Here I would know that the user will be clicking a button with the text "See an 
 `<img src="/example.png" title="An example of the product" alt="An example of the product" />`
 
 ### Headlines and Text Paragraphs
-Almost every interface contains some mix of Headlines and Text Paragraphs, whether for marketing purposes, descriptive purposes and so on. To write this in CIxD syntax, you wrap headlines in two `#` characters and paragraphs in two `--` characters. Like so:
+Almost every interface contains some mix of Headlines and Text Paragraphs, whether for marketing purposes, descriptive purposes and so on. To write this in CD syntax, you wrap headlines in two `#` characters and paragraphs in two `--` characters. Like so:
 
 ```
 Yui: #Thanks for signing up as a customer!#
@@ -128,7 +128,7 @@ Yui: --As a welcome gift, we've added 20 free credits to your account. Spend it 
 Here I would know that the page should contain a headline, e.g. a `<h1>` tag with the text `Thanks for signing up as a customer!`. The same being true for the following text paragraph, which would probably be displayed with a `<p>` or `<span>` tag.
 
 ### Default Values
-What do we do if we need to display some default text like "Your Company Name" when the user has not yet told us what it is? In CIxD syntax we could solve it with the `/` character, stating an "or". Like this:
+What do we do if we need to display some default text like "Your Company Name" when the user has not yet told us what it is? In CD syntax we could solve it with the `/` character, stating an "or". Like this:
 ```
 Yui: #{{company.name}} / Your Company Name#
 ```
@@ -136,7 +136,7 @@ In this more complex example, I would know that here is a Headline that contains
 `{{{ $company_name or 'Your Company Name' }}}`
 
 ### Tooltips & Titles
-Most form fields display some kind of tooltips or titles that aid the user when entering their data. How may we write this in CIxD? By using the caret character `^^` we can indicate something "above" another thing, like an input field. Like so:
+Most form fields display some kind of tooltips or titles that aid the user when entering their data. How may we write this in CD? By using the caret character `^^` we can indicate something "above" another thing, like an input field. Like so:
 ```
 You: So, what information do you need from me?
 Yui: Not much, just your _Password_, which ^Must contain at least 6 characters^
@@ -149,7 +149,7 @@ This could translate directly into the following code:
 
 
 ## Cheatsheet
-For those in a hurry, here's a quick cheatsheet for the CIxD Syntax
+For those in a hurry, here's a quick cheatsheet for the CD Syntax
 
  Interactions and Content                 | Marker      | Syntax Example
  ---------------------------------------- | ----------- | ------------------------
