@@ -7,7 +7,20 @@ What is Conversational Design?
 ----------------------------------------------------------
 Conversational Design is a "working title" I use for the method described by [Luca Leone in this great article](http://www.smashingmagazine.com/2014/07/21/how-do-you-design-interaction/) which is featured at Smashing Magazine. It is an approach to designing interfaces and interaction by writing out an everyday conversation, as if you were talking to a friend or employee in a store.
 
+So, what is so special about this method? It activates your awesome, designer empathy superpowers very early on, way before you crank out sketches, prototypes and so on. Furthermore, Conversational Design is **ridiculously cost-effective** because, at its core, you only need yourself, a pen and paper.
 
+
+So, why do you need a Syntax?
+----------------------------------------------------------
+A very good question with a simple answer: applicability with the real, scary world. Very often, there are many others working together to ship a digital product. Being an app, a website or something else that is interactive in some way. And it is in this situation (well also in solo-projects too) that Conversational Design falls a bit short, especially in the proces of transfering a conversational design script from simple text to actual code and design.
+
+That's where the Syntax comes in. And it is quite simple to understand and use, with a little practice.
+
+By wrapping parts of a conversational design script in different symbols that hold some specific meaning, we can begin to scan a script and quickly understand what we should actually make. What buttons do what, how many input fields, what phrasing we should use and so on. All before even opening a code editor or Photoshop!
+
+Combine this with iterating the scripts until you and / or your team feels satisfied and you can save yourself a bunch of future headaches. Heck, throw in some user feedback and get real people to review your scripts before potentially wasting your time on unnecessary or confusing features. If you're courageous, I dare you to try some [Method Acting](http://www.rawnet.com/latest-news/empathetic-design-what-can-the-web-learn-from-the-method-acting-technique) with said real people to really get an idea of things.
+
+Now, without any further ado, let's introduce the Syntax.
 
 Syntax
 -------------------------------------
