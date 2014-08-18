@@ -174,3 +174,6 @@ To make the most out of CD and the CD Syntax, I'd definitely recommend trying th
 
 - **Method Acting**:
   Taking one or more of your scripts, find a friend or a potential user and act out the script with them. It might become painfully clear that your design or interaction flow is asking too much of the user, seems rude or confusing. Many e-commerce checkout processes could benefit from this approach. Just think of how strange it would be if shopping in the offline world would be if it mirrored the flow many webshops force customers through.
+
+- **Reading aloud**:
+  While not a classic design method per se, simply reading out your scripts to yourself or a team-member can be a useful way to spot flaws in the flow of the product. Also, this can be done in a more private manner before trying out the more daunting Method Acting.
